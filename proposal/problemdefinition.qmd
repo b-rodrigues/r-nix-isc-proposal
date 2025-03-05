@@ -17,26 +17,23 @@ It is important to cover:
 -->
 
 
-Packaging R packages for multiple operating systems and architectures is a challenging and time-consuming task. 
-Building binaries for different architectures involves handling diverse compiler settings, managing platform-specific dependencies, 
-and ensuring compatibility across various system environments. These challenges can lead to inconsistencies and build failures, 
-especially when system-level dependencies are not managed explicitly.
+Packaging R packages for different operating systems and architectures is a difficult and time-consuming task. 
+Building binaries for various systems means dealing with different compiler settings, managing platform-specific dependencies, and ensuring everything works well across environments. 
+This often leads to inconsistencies and build failures, especially when system-level dependencies are not clearly handled.
 
-There have been several significant efforts to mitigate these issues. For instance, organizations like Posit and community initiatives such as r2u 
-have made strides in automating the binary building process. However, these approaches have notable limitations. For example, in the case of the Posit
-Public Package manager, system-level dependencies are not explicitly managed requiring users to do it themselves. r2u only packages the current
-state of CRAN and cannot be used to install older versions of packages. 
+There have been efforts to ease this process. 
+For example, organizations like Posit and community projects such as r2u have made progress in automating binary builds. 
+However, these solutions have some drawbacks. 
+The Posit Public Package Manager does not manage system-level dependencies automatically, leaving that work to users, while r2u only packages the current state of CRAN, which means older package versions are not available.
 
-Given that R is used extensively across diverse operating systems and hardware architectures, resolving these issues is critical. 
-One promising solution is the integration of Docker images into the build process. Docker can encapsulate the entire software environment, 
-including all necessary system dependencies, ensuring that R packages can be built and run consistently regardless of the underlying system. 
-This not only enhances reproducibility but also streamlines the deployment process for end users. However, just using Docker in itself does not
-guarantee that projects are reproducible, and Docker containers run in complete isolation from the rest of the system, which can lead to
-increased difficulties in using them for interactive, explorative work.
+Since R is used on many different operating systems and hardware platforms, solving these issues is essential. 
+One solution that seemed to tackle these issues was to use Docker images in the build process. 
+Docker can capture the entire software environment—including all necessary dependencies—so that R packages are built and run consistently on any system. 
+This improves reproducibility and makes deployment easier. 
+However, using Docker alone does not ensure full reproducibility, and its isolated containers can make interactive, explorative work more challenging.
 
-Addressing these challenges is important because it directly affects a broad community of R users—from data scientists to statisticians—who depend on consistent 
-and reliable package installations across various environments. By tackling this problem, we can significantly improve the robustness and accessibility of R packages, 
-ultimately fostering better reproducibility and user experience.
+Additionally, it can be tough to deploy the same environment across multiple computers, which is important for collaborative work and continuous integration. 
+Addressing these challenges will benefit a wide community of R users—from data scientists to statisticians—by providing more consistent and reliable package installations, ultimately leading to better reproducibility and user experience.
 
 ```
 An example in-text citation [@wickham2016].
