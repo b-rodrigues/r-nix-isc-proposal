@@ -5,7 +5,9 @@ This is where the proposal should be outlined.
 
 ## Overview
 <!--
-At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
+At a high-level address what your proposal is and how it will address the
+problem identified. Highlight any benefits to the R Community that follow from
+solving the problem. This should be your most compelling section.
 -->
 
 ## Detail
@@ -19,25 +21,40 @@ Depending on project type the detail section should include:
  - [ ] Architecture
  - [ ] Assumptions
 
-Our proposal centers on leveraging Nix, a package manager built for reproducible builds, to completely package CRAN and Bioconductor for R. 
-Nix makes it easy to install multiple versions of packages and supports per-project development environments, all while operating seamlessly across various operating systems and architectures. 
-Although CRAN and Bioconductor are already packaged with Nix, not all packages are available as binaries and thus must be compiled from source.
-Our goal is to extend this to cover the entire repositories—including older versions—to ensure full reproducibility and stability for the R community.
+Our proposal centers on leveraging Nix, a package manager built for reproducible
+builds, to completely package CRAN and Bioconductor for R. Nix makes it easy to
+install multiple versions of packages and supports per-project development
+environments, all while operating seamlessly across various operating systems
+and architectures. Although CRAN and Bioconductor are already packaged with Nix,
+not all packages are available as binaries and thus must be compiled from
+source. Our goal is to extend this to cover the entire repositories—including
+older versions—to ensure full reproducibility and stability for the R community.
 
-By investing in dedicated hardware and developing thorough documentation, we aim to simplify the process for R users. 
-This initiative will provide reliable, reproducible environments that benefit everyone from data scientists to statisticians, ultimately enhancing collaborative work and continuous integration across diverse systems.
+By investing in dedicated hardware and developing thorough documentation, we aim
+to simplify the process for R users. This initiative will provide reliable,
+reproducible environments that benefit everyone from data scientists to
+statisticians, ultimately enhancing collaborative work and continuous
+integration across diverse systems.
 
-Our minimum viable product will consist of a build farm that leverages a variety of hardware running both Linux and macOS. 
-This setup ensures that we can compile binaries across different operating systems. 
-To automate the build process, we will use Hydra, the continuous integration tool from NixOS, which will compile the binaries efficiently. 
-In addition, we plan to integrate an S3 storage solution to cache and distribute these binary packages effectively, ensuring they are quickly and reliably accessible to all users.
+Our minimum viable product will consist of a build farm that leverages a variety
+of hardware running both Linux and macOS. This setup ensures that we can compile
+binaries across different operating systems. To automate the build process, we
+will use Hydra, the continuous integration tool from NixOS, which will compile
+the binaries efficiently. In addition, we plan to integrate an S3 storage
+solution to cache and distribute these binary packages effectively, ensuring
+they are quickly and reliably accessible to all users.
 
 Our architecture ... *here I think we should have a diagram?*
 
-We assume that sufficient funding and hardware resources will be available to build and maintain this infrastructure. 
-It is also anticipated that the existing Nix ecosystem can be scaled to cover the full scope of CRAN and Bioconductor repositories. 
-Moreover, with the support of improved and user-friendly documentation, we expect that R users will readily adopt Nix, easing their transition to a reproducible build environment.
+We assume that sufficient funding and hardware resources will be available to
+build and maintain this infrastructure. It is also anticipated that the existing
+Nix ecosystem can be scaled to cover the full scope of CRAN and Bioconductor
+repositories. Moreover, with the support of improved and user-friendly
+documentation, we expect that R users will readily adopt Nix, easing their
+transition to a reproducible build environment.
 
-Overall, this proposal offers a robust solution to the challenges of managing R packages across diverse environments, ensuring consistency, reliability, and enhanced reproducibility for the entire R community.
+Overall, this proposal offers a robust solution to the challenges of managing R
+packages across diverse environments, ensuring consistency, reliability, and
+enhanced reproducibility for the entire R community.
 
 -->
