@@ -10,6 +10,18 @@ problem identified. Highlight any benefits to the R Community that follow from
 solving the problem. This should be your most compelling section.
 -->
 
+We propose to strengthen reproducibility for the R community by ensuring that all CRAN and Bioconductor 
+packages are available as prebuilt binaries through Nix, a package manager with reproducibility as a design
+goal. 
+While Nix already supports multiple package versions, per-project environments, and cross-platform compatibility, 
+many R packages still require building from source. Our project addresses this gap by funding 
+dedicated hardware that the NixOS Foundation will use to build and distribute R package binaries.
+
+This effort will provide researchers, data scientists, and statisticians with reliable, reproducible environments, 
+simplify collaborative workflows, and enhance continuous integration practices. 
+By making this targeted investment, we deliver a concrete, practical improvement to the R ecosystem’s 
+reproducibility and stability, benefiting the community immediately without requiring major infrastructure changes.
+
 ## Detail
 <!--
 Go into more detail about the specifics of the project and it delivers against the problem.
