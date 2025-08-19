@@ -1,34 +1,63 @@
 # Requirements
-<!-- 
-An idea of what is required to make the project actually happen
--->
 
 ## People
-<!--
-Who needs to be involved, what's the proposed structure, what will it take to get their involvement?
--->
+
+The people involved are the current maintainers of the R programming language for Nix, namely:
+
+- Philipp Baumann
+- Justin Bedő
+- László Kupcsik
+- Bruno Rodrigues
+
+From the NixOS Foundation’s side, we have taken up contact with:
+
+- Ron Efroni
+- Ryan Trinkle
 
 ## Processes
-<!-- 
-What processes need to be put in place e.g. codes of conduct, regular ISC meetings, handover to the community at large?
--->
+
+The process should:
+
+- establish a formal commitment with the NixOS Foundation to ensure that any purchased hardware will be dedicated to building R package binaries,
+
+- secure funding, and either forward it to the NixOS Foundation for hardware acquisition or purchase the hardware directly and donate it.
 
 ## Tools & Tech
-<!--
-What is going to be needed to deliver this project? 
 
-Will cloud computing be used - if yes are there are necessary components that will be deciding factors between providers?
+### x86_64 Linux Servers
 
-Are there tools or tech that don't exist that will be produced to facilitate the project?
--->
+To build and serve binaries at scale, we will require at least one high-performance x86_64 server. A typical configuration would be:
+
+- CPU: Dual Intel Xeon Gold or AMD EPYC processors, 32–64 cores total
+- RAM: 256–512 GB ECC memory
+- Storage: 4–8 TB NVMe SSD
+- Networking: 10 Gbit Ethernet or better (to sync with the build farm)
+- Redundancy: Hot-swappable drives, redundant PSUs for reliability
+
+Such a machine provides the compute and memory required to build thousands of R packages quickly, while integrating smoothly with the existing NixOS build infrastructure.
+
+### macOS (aarch64-darwin) Builders
+
+For macOS binary coverage, we will provide two Apple Mac Minis (M4 generation or latest available at purchase). 
+A Mac Mini (as of 2025) typically includes:
+
+- CPU: Apple M4 Pro or M4 Max SoC
+- GPU: Integrated 16–40 core GPU
+- RAM: 128 GB unified memory
+- Storage: 1 TB SSD (or more, but 1 TB is likely enough)
+- Networking: Built-in 10 Gbit Ethernet option
+
+Two Mac Minis will be deployed in parallel to provide sufficient capacity and redundancy for macOS builds, ensuring timely binary availability for aarch64-darwin users.
 
 ## Funding
-<!-- 
-[TO DO] THE GUIDANCE IS PRETTY UNCLEAR, ESP IN LIGHT OF GABOR'S PROPOSAL VS AWARD SIZE
 
--->
+Estimated cost: ~10'000 EUR:
+- 2500 EUR for each Mac mini
+- 5000 EUR for the Linux server
 
 ## Summary
-<!--
-A summary of the requirements that contextualises the costs
--->
+
+This project requires modest investment in hardware and formal coordination with the NixOS Foundation. 
+By dedicating a small cluster of Linux servers and Mac Minis to building R package binaries, we can provide full binary coverage for CRAN and Bioconductor within Nix. 
+The total cost of around 10'000 EUR covers both the purchase and donation of this hardware. 
+Once integrated into the existing NixOS build farm, the infrastructure will serve the entire R community by ensuring reproducibility, faster package installation, and reliable support across Linux and macOS platforms.
