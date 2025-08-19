@@ -21,40 +21,30 @@ Depending on project type the detail section should include:
  - [ ] Architecture
  - [ ] Assumptions
 
-Our proposal centers on leveraging Nix, a package manager built for reproducible
-builds, to completely package CRAN and Bioconductor for R. Nix makes it easy to
-install multiple versions of packages and supports per-project development
-environments, all while operating seamlessly across various operating systems
-and architectures. Although CRAN and Bioconductor are already packaged with Nix,
-not all packages are available as binaries and thus must be compiled from
-source. Our goal is to extend this to cover the entire repositories—including
-older versions—to ensure full reproducibility and stability for the R community.
+Our proposal aims to extend the power of Nix, a package manager designed for reproducible builds, 
+to fully support CRAN and Bioconductor for R. Nix already enables seamless installation of multiple
+package versions and per-project development environments across different operating systems and architectures. 
+While CRAN and Bioconductor are partially available through Nix today, many packages still need to be compiled from source. 
+Our goal is to cover the entire repositories—including historical versions—so that the R community can rely on complete reproducibility and long-term stability.
 
-By investing in dedicated hardware and developing thorough documentation, we aim
-to simplify the process for R users. This initiative will provide reliable,
-reproducible environments that benefit everyone from data scientists to
-statisticians, ultimately enhancing collaborative work and continuous
-integration across diverse systems.
+To achieve this, we will invest in dedicated hardware and produce clear documentation, 
+lowering the barriers for R users and making reproducible environments more accessible. 
+This initiative will benefit researchers, data scientists, and statisticians alike, 
+while improving collaborative workflows and continuous integration practices across platforms.
 
-Our minimum viable product will consist of a build farm that leverages a variety
-of hardware running both Linux and macOS. This setup ensures that we can compile
-binaries across different operating systems. To automate the build process, we
-will use Hydra, the continuous integration tool from NixOS, which will compile
-the binaries efficiently. In addition, we plan to integrate an S3 storage
-solution to cache and distribute these binary packages effectively, ensuring
-they are quickly and reliably accessible to all users.
+The minimum viable product is straightforward. The NixOS Foundation already operates a build farm that 
+compiles binaries for nearly all of the 120,000 packages available through Nix. Our proposal is to purchase 
+additional hardware and donate it to the NixOS Foundation, which would then integrate it into their 
+existing infrastructure to build R package binaries at scale.
 
-Our architecture ... *here I think we should have a diagram?*
+We have already confirmed with the NixOS Foundation that they are open to this arrangement. 
+The main question is whether we should purchase and donate the hardware directly, 
+or transfer the funds to the NixOS Foundation so they can acquire the equipment themselves, which would
+be a simpler and more effective approach.
 
-We assume that sufficient funding and hardware resources will be available to
-build and maintain this infrastructure. It is also anticipated that the existing
-Nix ecosystem can be scaled to cover the full scope of CRAN and Bioconductor
-repositories. Moreover, with the support of improved and user-friendly
-documentation, we expect that R users will readily adopt Nix, easing their
-transition to a reproducible build environment.
-
-Overall, this proposal offers a robust solution to the challenges of managing R
-packages across diverse environments, ensuring consistency, reliability, and
-enhanced reproducibility for the entire R community.
+In short, this project delivers a practical, community-oriented solution to the persistent 
+challenges of managing R packages across diverse environments. 
+By ensuring consistency, reliability, and reproducibility, 
+it strengthens the foundation for R’s long-term growth and collaborative potential.
 
 -->
