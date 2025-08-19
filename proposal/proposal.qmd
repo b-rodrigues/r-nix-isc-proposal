@@ -20,6 +20,7 @@ Depending on project type the detail section should include:
  - [ ] Minimum Viable Product
  - [ ] Architecture
  - [ ] Assumptions
+-->
 
 Our proposal aims to extend the power of Nix, a package manager designed for reproducible builds, 
 to fully support CRAN and Bioconductor for R. Nix already enables seamless installation of multiple
@@ -47,4 +48,3 @@ challenges of managing R packages across diverse environments.
 By ensuring consistency, reliability, and reproducibility, 
 it strengthens the foundation for R’s long-term growth and collaborative potential.
 
--->
