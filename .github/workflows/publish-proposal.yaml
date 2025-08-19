@@ -37,16 +37,27 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-
-        git fetch origin
-        git checkout main
-        git pull origin main
-
+    
+        # remove old PDF folder and recreate
         rm -rf rendered_proposal
         mkdir -p rendered_proposal
-
+    
+        # verify PDF exists
+        if [ ! -f isc-proposal.pdf ]; then
+          echo "ERROR: isc-proposal.pdf not found"
+          exit 1
+        fi
+    
+        # copy PDF into folder
         cp isc-proposal.pdf rendered_proposal/
-
-        git add -A rendered_proposal
-        git commit -m "Update rendered proposal" || echo "No changes to commit"
-        git push --force origin main
+    
+        # ensure Git tracks it
+        git add -f rendered_proposal/isc-proposal.pdf
+    
+        # commit only if changed, skip otherwise
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update rendered proposal"
+          git push --force origin main
+        fi
