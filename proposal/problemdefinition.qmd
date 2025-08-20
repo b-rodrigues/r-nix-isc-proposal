@@ -15,7 +15,8 @@ It is important to cover:
  - [ ] Have there been previous attempts to resolve the problem
  - [ ] Why it should be tackled
 -->
-
+```
+An example in-text citation [@wickham2016].
 
 Packaging R packages for different operating systems and architectures is a
 difficult and time-consuming task. Building binaries for various systems means
@@ -42,9 +43,8 @@ interactive, explorative work more challenging.
 
 Additionally, it can be tough to deploy the same environment across multiple
 computers, which is important for collaborative work and continuous integration.
-Addressing these challenges will benefit a wide community of R users—from data
-scientists to statisticians—by providing more consistent and reliable package
-installations, ultimately leading to better reproducibility and user experience.
+Addressing these challenges will benefit a wide community of R users by providing 
+more consistent and reliable package installations, ultimately leading to better 
+reproducibility and user experience.
 
-```
-An example in-text citation [@wickham2016].
+
