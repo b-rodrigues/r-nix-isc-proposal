@@ -1,10 +1,10 @@
 ---
-title: "Proposal Title"
+title: "Strengthening Reproducibility for the R Community: Comprehensive Nix Binary Cache for CRAN and Bioconductor"
 author: 
-  - name: Annie Easley
-    orcid: 5555-5555-5555-5555
+  - name: Bruno Rodrigues
+    orcid: 0000-0002-3211-3689
     affiliations:
-      - "Lewis Research Center, National Aeronautics and Space Administration"
+      - "Ministry of Research and Higher Education, Luxembourg"
     
 date: today
 date-format: iso
