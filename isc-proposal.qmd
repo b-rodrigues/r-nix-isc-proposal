@@ -1,18 +1,20 @@
 ---
 title: "Strengthening Reproducibility for the R Community: Comprehensive Nix Binary Cache for CRAN and Bioconductor"
-author: 
+author:
   - name: Bruno Rodrigues
     orcid: 0000-0002-3211-3689
     affiliations:
       - "Ministry of Research and Higher Education, Luxembourg"
-    
+  - name: László Kupcsik
+    orcid: 0000-0003-3535-5496
+
 date: today
 date-format: iso
 format:
   html:
     embed-resources: true
   hikmah-pdf:
-    geometry: 
+    geometry:
       - left=1.25in
       - right=1.25in
 bibliography: references.bib
