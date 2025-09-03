@@ -1,5 +1,11 @@
 # Project plan
 
+A detailed, granular timeline for this project is challenging to define, as the core technical implementation (hardware procurement and integration) will be executed by the NixOS Foundation. 
+Our role is to facilitate this process by securing the necessary agreement and funding. 
+We have already established initial contact with key members of the NixOS Foundation, and they have agreed in principle to this collaboration. 
+The timeline below is therefore a high-level estimate, contingent on their internal processes and hardware availability. 
+However, we are confident that the project can be fully delivered by the end of 2026.
+
 ## Start-up phase
 <!--
 Covering the planning phase, this section should provide a relatively detailed plan of how work will start on the project. This section is important because projects need to get up and running quickly.
@@ -9,7 +15,17 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Licence decisions
  - [ ] Reporting framework
 -->
+**(Q1 2026)**
 
+The initial phase focuses on formalizing the collaboration and preparing for the fund transfer.
+
+*   **Finalize Agreement:** Draft and sign a formal memorandum of understanding (MoU) with the NixOS Foundation. 
+    This document will outline the responsibilities of each party, confirm that the hardware will be dedicated to building R package binaries, and establish a framework for reporting.
+*   **Establish Communication Channels:** Set up a dedicated communication channel (e.g., a shared Matrix channel or regular video calls) between the project team and our contacts at the NixOS Foundation to ensure smooth coordination.
+*   **Reporting Framework:** Agree on a simple reporting mechanism where the NixOS Foundation can provide regular updates on hardware acquisition, integration, and build status. 
+    This will be used for our own tracking and for reporting to the ISC.
+*   **Funding Mechanism:** Finalize the decision on whether to purchase and donate the hardware directly or transfer the funds to the NixOS Foundation for them to acquire it. 
+    The latter is preferred for simplicity.
 
 ## Technical delivery
 <!--
@@ -17,6 +33,19 @@ Covering the actual delivery of the project this section should provide at least
 
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
+**(Q1 2026 - Q4 2026)**
+
+This phase covers the transfer of funds and the subsequent technical work performed by the NixOS Foundation.
+Our role will be one of monitoring.
+
+*   **Q1 2026: Funding Transfer:** Once the agreement is signed, the secured funds will be transferred to the NixOS Foundation.
+*   **Q2 2026: Hardware Procurement:** The NixOS Foundation will order and acquire the specified Linux server and Mac Minis. This timeline includes a buffer for potential supply chain delays.
+*   **Q3 2026: Hardware Integration:** The NixOS Foundation will install and integrate the new hardware into their existing build farm infrastructure (Hydra). 
+    This includes network setup, system configuration, and ensuring the new builders are recognized by their system.
+*   **Q3-Q4 2026: Initial Builds and Scaling:** The new builders will begin compiling R packages from CRAN and Bioconductor. 
+    The system will be monitored and scaled to work through the entire backlog of packages, aiming for comprehensive coverage.
+*   **End of 2026: Full Service Availability:** The build farm is fully operational, providing pre-compiled binaries for the vast majority of current CRAN and Bioconductor packages on x86_64-linux, aarch64-linux and aarch64-darwin. 
+    The project's primary technical goals are now met.
 
 ## Other aspects
 <!--
@@ -28,3 +57,13 @@ Covering non-technical activities like on-going publicity, paper preparation, di
  - [ ] UseR!
  - [ ] ISC meetings
 -->
+**(Ongoing throughout 2026)**
+
+These activities will run in parallel to the technical delivery to ensure the R community is aware of the project and can benefit from its results.
+
+*   **Announcement Post (Q1 2026):** Once funding is secured and the agreement is in place, we will publish a blog post announcing the project to the R and Nix communities.
+*   **Progress Updates (Q2-Q3 2026):** We will provide periodic updates via blog posts or social media (e.g., Twitter/X, Mastodon, Bluesky) as major milestones are reached (e.g., hardware purchased, integration complete).
+*   **Delivery Blog Post (Q4 2026):** Upon successful completion and full service availability, a detailed blog post will be published. 
+    This post will serve as the official launch announcement and will include documentation on how R users can configure Nix to use the new binary cache.
+*   **useR! / Community Engagement (2027):** We plan to submit a talk or poster to a relevant conference (like useR! or NixCon) in the following year to share the project's success and encourage wider adoption.
+*   **ISC Meetings (Ongoing):** We will provide regular progress reports at ISC meetings as required, using the information from our agreed-upon reporting framework with the NixOS Foundation.
