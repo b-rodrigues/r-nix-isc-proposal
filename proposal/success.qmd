@@ -7,16 +7,26 @@ Projects should have a definition of done that is measurable, and a thorough und
 <!-- 
 What does success look like? 
 -->
+The project will be considered complete when the following conditions are met:
+- A formal agreement with the NixOS Foundation is signed, dedicating the new hardware to the task of building R package binaries.
+- The specified hardware (one x86_64 Linux server and two aarch64-darwin Mac Minis) has been successfully procured and officially transferred to the NixOS Foundation.
+- The hardware is fully integrated into the NixOS build farm infrastructure and is actively building packages.
+- Comprehensive binary coverage for the entirety of current CRAN and Bioconductor packages is achieved and publicly available for x86_64-linux, aarch64-linux and aarch64-darwin architectures.
 
 ## Measuring success
 <!-- 
 How will we know when success is achieved, what markers can we use along the way 
 -->
+Success will be measured through the following key markers:
+- **Integration Confirmation:** Official confirmation from the NixOS Foundation that the donated hardware is online and successfully integrated into their build farm (Hydra).
+- **Binary Coverage:** A publicly accessible metric (e.g., a dashboard) tracking the percentage of CRAN and Bioconductor packages with available pre-built binaries. The primary success marker is reaching and maintaining near 100% coverage.
 
 ## Future work
 <!-- 
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
+Upon successful completion, this project can be extended in several ways:
+- **Historical Coverage:** A dedicated effort could be launched to build historical versions of all CRAN and Bioconductor packages, providing a complete archive for long-term reproducibility.
 
 ## Key risks
 <!-- 
@@ -28,3 +38,7 @@ What sort of things could come up that can delay or break the project?
  - [ ] Costs
 
 -->
+- **People:** The project relies on a small group of volunteer maintainers from both the R-on-Nix community and the NixOS Foundation. The departure or unavailability of key individuals could create delays in integration or long-term maintenance.
+- **Processes:** Delays in formalizing the agreement with the NixOS Foundation or unforeseen logistical complexities in purchasing and transferring hardware internationally could slow down the project's start.
+- **Tooling & Technology:** There may be unforeseen technical challenges in integrating the specific hardware into the NixOS build farm. Furthermore, a small subset of R packages with exceptionally complex or non-standard build requirements may not be built successfully for NixOS.
+- **Costs:** The estimated hardware cost of ~10,000 EUR may fluctuate due to market price changes or unexpected shipping and import duties.
