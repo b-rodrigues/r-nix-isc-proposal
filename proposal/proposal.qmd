@@ -1,6 +1,6 @@
 # The proposal
 <!--
-This is where the proposal should be outlined. 
+This is where the proposal should be outlined.
 -->
 
 ## Overview
@@ -10,17 +10,31 @@ problem identified. Highlight any benefits to the R Community that follow from
 solving the problem. This should be your most compelling section.
 -->
 
-We propose to strengthen reproducibility for the R community by ensuring that all CRAN and Bioconductor 
+We propose to strengthen reproducibility for the R community by ensuring that all CRAN and Bioconductor
 packages are available as prebuilt binaries through Nix, a package manager with reproducibility as a design
-goal. 
-While Nix already supports multiple package versions, per-project environments, and cross-platform compatibility, 
-many R packages still require building from source. Our project addresses this gap by funding 
+goal.
+
+Nix enables us to declare truly reproducible development and runtime
+environments. This definition becomes part of the project code,
+which solves the problem of harmonizing larger collaborative projects and CI
+pipelines.
+
+While Nix already supports multiple package versions, per-project environments, and cross-platform compatibility,
+many R packages still require building from source. Our project addresses this gap by funding
 dedicated hardware that the NixOS Foundation will use to build and distribute R package binaries.
 
-This effort will provide researchers, data scientists, and statisticians with reliable, reproducible environments, 
-simplify collaborative workflows, and enhance continuous integration practices. 
-By making this targeted investment, we deliver a concrete, practical improvement to the R ecosystem’s 
+This effort will provide researchers, data scientists, and statisticians with reliable, reproducible environments,
+simplify collaborative workflows, and enhance continuous integration practices.
+The R core and package developers can also benefit from early indication of breaking
+changes in upstream libraries,[^quantlib] as the nixpkgs ecosystem is the most up-to-date
+among the major Linux distributions.[^repology]
+
+By making this targeted investment, we deliver a concrete, practical improvement to the R ecosystem’s
 reproducibility and stability, benefiting the community immediately without requiring major infrastructure changes.
+
+[^quantlib]: https://github.com/eddelbuettel/rquantlib/issues/187
+
+[^repology]: https://web.archive.org/web/20250828120031/https://repology.org/
 
 ## Detail
 <!--
@@ -34,29 +48,29 @@ Depending on project type the detail section should include:
  - [ ] Assumptions
 -->
 
-Our proposal aims to extend the power of Nix, a package manager designed for reproducible builds, 
+Our proposal aims to extend the power of Nix, a package manager designed for reproducible builds,
 to fully support CRAN and Bioconductor for R. Nix already enables seamless installation of multiple
-package versions and per-project development environments across different operating systems and architectures. 
-While CRAN and Bioconductor are partially available through Nix today, many packages still need to be compiled from source. 
+package versions and per-project development environments across different operating systems and architectures.
+While CRAN and Bioconductor are partially available through Nix today, many packages still need to be compiled from source.
 Our goal is to cover the entire repositories—including historical versions—so that the R community can rely on complete reproducibility and long-term stability.
 
-To achieve this, we will invest in dedicated hardware and produce clear documentation, 
-lowering the barriers for R users and making reproducible environments more accessible. 
-This initiative will benefit researchers, data scientists, and statisticians alike, 
+To achieve this, we will invest in dedicated hardware and produce clear documentation,
+lowering the barriers for R users and making reproducible environments more accessible.
+This initiative will benefit researchers, data scientists, and statisticians alike,
 while improving collaborative workflows and continuous integration practices across platforms.
 
-The minimum viable product is straightforward. The NixOS Foundation already operates a build farm that 
-compiles binaries for nearly all of the 120,000 packages available through Nix. Our proposal is to purchase 
-additional hardware and donate it to the NixOS Foundation, which would then integrate it into their 
+The minimum viable product is straightforward. The NixOS Foundation already operates a build farm that
+compiles binaries for nearly all of the 120,000 packages available through Nix. Our proposal is to purchase
+additional hardware and donate it to the NixOS Foundation, which would then integrate it into their
 existing infrastructure to build R package binaries at scale.
 
-We have already confirmed with the NixOS Foundation that they are open to this arrangement. 
-The main question is whether we should purchase and donate the hardware directly, 
+We have already confirmed with the NixOS Foundation that they are open to this arrangement.
+The main question is whether we should purchase and donate the hardware directly,
 or transfer the funds to the NixOS Foundation so they can acquire the equipment themselves, which would
 be a simpler and more effective approach.
 
-In short, this project delivers a practical, community-oriented solution to the persistent 
-challenges of managing R packages across diverse environments. 
-By ensuring consistency, reliability, and reproducibility, 
+In short, this project delivers a practical, community-oriented solution to the persistent
+challenges of managing R packages across diverse environments.
+By ensuring consistency, reliability, and reproducibility,
 it strengthens the foundation for R’s long-term growth and collaborative potential.
 

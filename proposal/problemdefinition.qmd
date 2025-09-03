@@ -5,7 +5,7 @@ bibliography: references.bib
 # The Problem
 
 ```{=html}
-<!-- 
+<!--
 Outlining the issue / weak point / problem to be solved by this proposal. This should be a compelling section that sets the reader up for the next section - the proposed solution!
 
 It is important to cover:
@@ -42,10 +42,12 @@ reproducibility and makes deployment easier. However, using Docker alone does
 not ensure full reproducibility, and its isolated containers can make
 interactive, explorative work more challenging.
 
-Additionally, it can be tough to deploy the same environment across multiple
-computers, which is important for collaborative work and continuous integration.
-Addressing these challenges will benefit a wide community of R users by providing 
-more consistent and reliable package installations, ultimately leading to better 
-reproducibility and user experience.
+Additionally, deploying the same environment across multiple computers remains a
+challenge, even though it is essential for collaborative work and continuous
+integration.
+
+Hence, this approach will benefit a wide community of R users by providing more
+consistent and reliable package installations, ultimately leading to improved
+reproducibility, collaboration and user experience.
 
 
