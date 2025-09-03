@@ -15,8 +15,9 @@ It is important to cover:
  - [ ] Have there been previous attempts to resolve the problem
  - [ ] Why it should be tackled
 -->
-```
 An example in-text citation [@wickham2016].
+
+```
 
 Packaging R packages for different operating systems and architectures is a
 difficult and time-consuming task. Building binaries for various systems means
