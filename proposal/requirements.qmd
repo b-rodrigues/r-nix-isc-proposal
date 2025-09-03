@@ -52,6 +52,7 @@ Two Mac Minis will be deployed in parallel to provide sufficient capacity and re
 ## Funding
 
 Estimated cost: ~10'000 EUR:
+
 - 2500 EUR for each Mac mini
 - 5000 EUR for the Linux server
 
