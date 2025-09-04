@@ -7,7 +7,7 @@ author:
       - "Ministry of Research and Higher Education, Luxembourg"
   - name: László Kupcsik
     orcid: 0000-0003-3535-5496
-  - name Justin Bedő
+  - name: Justin Bedő
     orcid: 0000-0001-5704-0212
 
 date: today
