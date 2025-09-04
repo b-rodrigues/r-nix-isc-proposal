@@ -11,7 +11,7 @@ solving the problem. This should be your most compelling section.
 -->
 
 We propose to strengthen reproducibility for the R community by ensuring that all CRAN and Bioconductor
-packages are available as prebuilt binaries through Nix, a package manager with reproducibility as a design
+packages are available as prebuilt binaries through Nix, a package manager designed with reproducibility as a
 goal.
 
 Nix enables us to declare truly reproducible development and runtime
@@ -52,7 +52,7 @@ Our proposal aims to extend the power of Nix, a package manager designed for rep
 to fully support CRAN and Bioconductor for R. Nix already enables seamless installation of multiple
 package versions and per-project development environments across different operating systems and architectures.
 While CRAN and Bioconductor are partially available through Nix today, many packages still need to be compiled from source.
-Our goal is to cover the entire repositories—including historical versions—so that the R community can rely on complete reproducibility and long-term stability.
+Our goal is to cover the entire repositories so that the R community can rely on complete reproducibility and long-term stability.
 
 To achieve this, we will invest in dedicated hardware and produce clear documentation,
 lowering the barriers for R users and making reproducible environments more accessible.
