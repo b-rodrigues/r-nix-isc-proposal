@@ -47,3 +47,8 @@ makes deployment easier. However, using Docker alone does not ensure
 full reproducibility as the issues remain when building the containers
 themselves.  Its isolated containers can make interactive, explorative
 work more challenging.
+
+This is more than a technical inconvenience; it is a direct tax on productivity and a threat to scientific integrity. 
+Researchers and data scientists lose countless hours debugging environment-specific build failures instead of focusing on their research. 
+Collaborations are slowed by 'works on my machine' issues, and the 'reproducibility crisis' in science is exacerbated when analyses cannot be reliably replicated. 
+Existing solutions are incomplete, leaving gaps in system-level dependencies or older package versions that are critical for validating past research.
