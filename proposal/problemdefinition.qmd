@@ -14,8 +14,9 @@ It is important to cover:
  - [ ] Who it affects
  - [ ] Have there been previous attempts to resolve the problem
  - [ ] Why it should be tackled
--->
 An example in-text citation [@wickham2016].
+
+-->
 
 ```
 
