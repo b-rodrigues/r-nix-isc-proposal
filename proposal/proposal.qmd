@@ -62,7 +62,9 @@ while improving collaborative workflows and continuous integration practices acr
 The minimum viable product is straightforward. The NixOS Foundation already operates a build farm that
 compiles binaries for nearly all of the 120,000 packages available through Nix. Our proposal is to purchase
 additional hardware and donate it to the NixOS Foundation, which would then integrate it into their
-existing infrastructure to build R package binaries at scale.
+existing infrastructure to build R package binaries at scale. The dedicated
+hardware would make it practical to compile vignettes and run examples, providing
+further robustness over installation checks.
 
 We have already confirmed with the NixOS Foundation that they are open to this arrangement.
 The main question is whether we should purchase and donate the hardware directly,
