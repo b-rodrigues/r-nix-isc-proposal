@@ -21,7 +21,5 @@ An optional section would be for R-Core signatories where changes to R are propo
 
 
 ## Consulted
-- Amanda L. Martin
-- Josiah Parry
 
 
