@@ -9,6 +9,8 @@ author:
     orcid: 0000-0003-3535-5496
   - name: Justin Bedő
     orcid: 0000-0001-5704-0212
+  - name: Philipp Baumann
+    orcid: 0000-0002-3194-8975
 
 date: today
 date-format: iso
