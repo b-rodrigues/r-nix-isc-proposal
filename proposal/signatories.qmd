@@ -22,4 +22,5 @@ An optional section would be for R-Core signatories where changes to R are propo
 
 ## Consulted
 
-
+We have taken up contact with Ron Efroni and Ryan Trinkle from the NixOS Foundation to discuss
+the proposal.
